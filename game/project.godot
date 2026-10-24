@@ -38,6 +38,7 @@ FsrExperiment="*res://src/platform/fsr_graphics.gd"
 TouchInput="*res://src/platform/touch_input.gd"
 PadInput="*res://src/platform/pad_input.gd"
 DeveloperConsole="*res://src/ui/game_console.gd"
+EIVR="*res://vr/ei_vr.gd"
 
 [debug]
 
@@ -114,6 +115,13 @@ environment/volumetric_fog/volume_size=128
 environment/volumetric_fog/volume_depth=96
 anti_aliasing/quality/screen_space_aa=2
 lights_and_shadows/positional_shadow/atlas_size=8192
+
+[xr]
+
+; EIVR (res://vr): OpenXR starts only with `--xr-mode on` (Play-VR.cmd).
+openxr/enabled=false
+openxr/startup_alert=false
+shaders/enabled=true
 
 [discord]
 
